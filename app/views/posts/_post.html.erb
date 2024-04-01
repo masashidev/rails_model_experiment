@@ -11,6 +11,13 @@
     <%= post.content %>
   </p>
 
+  <%# user %>
+  <p class="my-5">
+    <strong class="block font-medium mb-1">User:</strong>
+    <%= post.user.email %>
+  </p>
+
+
   <%# actions %>
   <% if action_name != "show" %>
     <%= link_to "Show this post", post,

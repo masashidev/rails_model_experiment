@@ -1,7 +1,18 @@
-<% if user_signed_in? %>
-  <p>Welcome, <%= current_user.email %>!</p>
-<% end %>
+<div>
+  <div class="flex justify-between items-center my-2">
 
+    <% if user_signed_in? %>
+      <p>Welcome, <%= current_user.email %>!</p>
 
-<div class="bg-slate-200 h-2 rounded-lg my-2">
+      <%= link_to "Edit profile",
+        edit_user_registration_path,
+        class: "border-2 border-gray-200 p-1 rounded-lg text-white" %>
+
+    <% end %>
+
+  </div>
+
+  <div class="bg-slate-200 h-2 rounded-lg my-2">
+  </div>
+
 </div>
