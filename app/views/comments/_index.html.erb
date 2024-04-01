@@ -1,0 +1,10 @@
+<div class="border-2 border-gray-200 p-5 rounded-lg my-2 space-y-2">
+  <% comments.each do |comment| %>
+    <div class="">
+      <p><%= comment.content %></p>
+      <p><%= comment.created_at.strftime("%Y-%m-%d %H:%M:%S") %></p>
+      
+    </div>
+  <% end %>
+
+</div>

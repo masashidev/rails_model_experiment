@@ -12,16 +12,16 @@
 
 */
 
-/* make every input text black */
-input[type="text"] {
-  color: black;
-}
-input {
-  color: black;
-}
-button {
-  color: black;
-}
-a {
-  color: black;
+/* Extending base styles */
+@layer base {
+  input[type="text"],
+  input,
+  button,
+  a {
+    @apply text-black; /* Sets text color to black */
+  }
+
+  textarea {
+    @apply bg-gray-800 text-white; /* Sets background to black and text to white */
+  }
 }
